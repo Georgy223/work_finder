@@ -1,0 +1,125 @@
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*input {*/
+/*    margin: 10px 0;*/
+/*    padding: 10px;*/
+/*    border: unset;*/
+/*    border-bottom: 2px solid #62c7e0;*/
+/*    outline: none;*/
+/*}*/
+
+/*button {*/
+/*    padding: 10px;*/
+/*    background: #62c7e0;*/
+/*    border: unset;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.msg {
+    border: 2px solid #ecd609;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.logout {
+    color: #5045e0;
+}
+
+.form-container>form{
+    border: lightgray 1px solid;
+    border-radius: 10px;
+}
+
+
+.dws-menu{
+    background-color: white;
+    /*margin-top: 100px;*/
+    width: 100%;
+}
+ul.dws-ul{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+li.dws-li{
+    list-style: none;
+    padding: 10px;
+}
+li.dws-li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    position: relative;
+    padding: 5px;
+}
+li.dws-li a i{
+    margin-right: 10px;
+}
+li.dws-li a::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #33bdf1;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+li.dws-li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #633ac2;
+    position: absolute;
+    top: 90%;
+    right: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+li.dws-li:hover{
+    background-color: #e5eae8;
+}
+li.dws-li:hover a::before{
+    width: 50%;
+    transform: translateX(100%);
+}
+li.dws-li:hover a::after{
+    width: 50%;
+    transform: translateX(-100%);
+}
+li.dws-li a:hover{
+    color: #e62117;
+}
+
+label::after{
+    content: ":";
+}
+
+.signin{
+    margin-top: 25vh;
+}
+
+.doc-card-header>h3{
+    display: inline !important;
+}
+.doc-card-header>p{
+    display: inline !important;
+}
+td{
+    padding: 10px 10px 10px 0;
+}
+
+.card{
+    padding: 10px;
+    border: lightgray solid 1px;
+    border-radius: 10px;
+    width: 25%;
+    margin: 1em;
+}
